@@ -4,26 +4,35 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Sinsfolio</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="Customization.css">    
+    <link rel="stylesheet" href="Customization.css">
     <style>
-        body{
+        body {
             background-color: #c7a7c1;
         }
     </style>
-      <!-- CDN for font -->
+    <!-- CDN for font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&display=swap"
         rel="stylesheet">
+    
+    <script src="main.js"></script>
 </head>
 
+
 <body>
-    <nav class="navbar navbar-expand-lg bg customBG" bg-dark border-bottom border-body data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg  customBG" bg-dark border-bottom border-body data-bs-theme="dark">
         <div class="container-fluid my-4">
-            <a class="navbar-brand customFont" href="index.html">SinsFolio</a>
+            <a class="navbar-brand customFont" href="index.html" id="logo-wrapper">
+                <span id="logo"><img src="finalLogo.png" height=30px width="30px" alt=""></span><span
+                    id="logof">insfolio</span>
+            </a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -63,49 +72,60 @@
         </div>
     </nav>
     <div class="container my-4">
-    <div class="row" mx-md-14>
-        <div class="offset-lg-1 col-lg-10 col-12">
-            <!-- text -->
-            <div class="text-center d-flex flex-column gap-12">
-                <div class="d-flex flex-column gap-4">
-                    <h1 class="mb-0 fw-bold ">Welcome to Mohsin's Portfolio</h1>
-                    <p class="lead mb-0 mx-xl-17 mx-md-14">Want to explore the projects I have created</p>
-                    <div>
-                        <a href="resume.html" class="btn btn-dark">Yes, Why not!</a>
+        <div class="row" mx-md-14>
+            <div class="offset-lg-1 col-lg-10 col-12">
+                <!-- text -->
+                <div class="text-center d-flex flex-column gap-12">
+                    <div class="d-flex flex-column gap-4">
+                        <h1 class="mb-0 fw-bold ">Welcome to Mohsin's Portfolio</h1>
+                        <p id="leady" class="lead mb-0 mx-xl-17 mx-md-14">Want to explore what projects have I created ?</p>
+                        <div>
+                            <a href="resume.html" class="btn btn-dark">Yes, Why not!</a>
+                        </div>
                     </div>
-                </div>
 
-                <!-- img -->
-                <div class="container my-4">
-                    <img src="1.png" alt="landing" class="img-fluid rounded-top-3">
+                    <!-- img -->
+                    <div class="container my-4">
+                        <img src="1.png" alt="landing" class="img-fluid rounded-top-3">
+                    </div>
                 </div>
             </div>
         </div>
-    </div> 
     </div>
     <div class="container" my-6>
         <div class="row featurette">
             <div class="col-md-7">
                 <h2 class="featurette-heading fw-normal lh-1">Introduction. <span class="text-body-secondary">Who am
                         I?.</span></h2>
-                <p class="lead">Hey there! I am Mohsin. A motivated and detail-oriented Software Engineering student at Sir Syed University (SSUET), currently in my 6th semester. Proficient in Java, Python, HTML, CSS, and OOP, with a foundational understanding of SQL and relational databases. Hands-on experience in Git for version control and in AI prompt engineering for problem-solving. Skilled in building desktop applications with Java Swing, integrating MySQL databases , and developing algorithms such as Round Robin CPU Scheduling with enhancements. Developed an AI-based project i.e Skin Cancer Detection App using Python machine learning libraries. A trilingual communicator (English, Urdu, Arabic) with a strong interest in web development, AI integration, and database management. Actively seeking an internship to apply my skills, contribute to impactful projects, and grow in a collaborative, tech-driven environment.</p>
+                <p id="intro" class="lead">Hey there! I am Mohsin. A motivated and detail-oriented Software Engineering
+                    student at
+                    Sir Syed University (SSUET), currently in my 6th semester. Proficient in Java, Python, HTML, CSS,
+                    and OOP, with a foundational understanding of SQL and relational databases. Hands-on experience in
+                    Git for version control and in AI prompt engineering for problem-solving. Skilled in building
+                    desktop applications with Java Swing, integrating MySQL databases , and developing algorithms such
+                    as Round Robin CPU Scheduling with enhancements. Developed an AI-based project i.e Skin Cancer
+                    Detection App using Python machine learning libraries. A trilingual communicator (English, Urdu,
+                    Arabic) with a strong interest in web development, AI integration, and database management. Actively
+                    seeking an internship to apply my skills, contribute to impactful projects, and grow in a
+                    collaborative, tech-driven environment.</p>
             </div>
-            <div class="col-md-5"> <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" height="500"
+            <div class="col-md-5"> <img
+                    class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" height="500"
                     preserveAspectRatio="xMidYMid slice" role="img" width="500" src="int.png" alt="">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%"
-                        fill="var(--bs-secondary-color)" dy=".3em"></text>
-                </svg> </div>
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%"
+                    fill="var(--bs-secondary-color)" dy=".3em"></text>
+                </svg>
+            </div>
         </div>
     </div>
     <div class="container my-6">
-    <footer class="container ">
-        <p class="float-end"><a href="#">Back to top</a></p>
-        <p>© 2025 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
-    </footer>
-</div>
+        <footer class="container ">
+            <p class="float-end"><a href="#">Back to top</a></p>
+            <p>© 2025 Mohsin's Portfolio, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        </footer>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
 </body>
-
